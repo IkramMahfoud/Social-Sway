@@ -30,7 +30,7 @@ function BottomTabsNavigator() {
         },
       })}>
 
-      <Tab.Screen name={homeName} component={HomeScreen} />
+      <Tab.Screen name={homeName} component={HomeScreen} options={{headerShown: false}}/>
       <Tab.Screen name={selectionName} component={Selection} />
 
     </Tab.Navigator>

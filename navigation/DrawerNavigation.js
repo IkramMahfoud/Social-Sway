@@ -2,8 +2,8 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import HomeScreen from '../screens/HomeScreen';
 import FAQ  from '../screens/FAQScreen';
+import BottomTabsNavigator from '../navigation/BottomTabsNavigator';
 
 const Drawer = createDrawerNavigator();
 
@@ -20,7 +20,7 @@ const DrawerNavigation = () => {
           fontSize: 20,
         },
       }}>
-      <Drawer.Screen name="Accueil" component={HomeScreen} />
+      <Drawer.Screen name="Accueil" component={BottomTabsNavigator} />
       <Drawer.Screen name="FAQ" component={FAQ} />
     </Drawer.Navigator>
   );

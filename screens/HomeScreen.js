@@ -1,6 +1,7 @@
 // HomeScreen.js
 import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
+import DATA from "../data/usersData"
 
 const HomeScreen = () => {
   return (
