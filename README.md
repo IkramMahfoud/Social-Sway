@@ -62,3 +62,6 @@ Lance l'application en mode développement pour accéder à l'interface Expo Dev
   
 * redux-thunk:
   Middleware pour gérer les actions asynchrones avec Redux.
+
+  **Note:**
+  * Veillez à avoir Node.js installé sur votre machine avant d'exécuter ces commandes.
