@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 const HomeScreen = () => {
   const navigation = useNavigation();
   const [selectedUser, setSelectedUser] = useState(null);
-  
+
   return (
     <ScrollView contentContainerStyle={styles.scrollViewContainer}>
       {DATA.map((user, index) => (
@@ -28,12 +28,12 @@ const HomeScreen = () => {
         >
           <Text style={styles.userName}>{user.name}</Text>
           <Image source={{ uri: user.img }} style={styles.userImage} />
-          <View>
+          <View style={styles.userDetails}>
             <Text style={styles.userDesc}>{user.country}</Text>
+            <Text style={styles.userDesc}>{user.articles.length}</Text>
           </View>
         </Pressable>
       ))}
-
     </ScrollView>
   );
 };
@@ -63,6 +63,12 @@ const styles = StyleSheet.create({
   userDesc: {
     fontSize: 16,
     marginBottom: 10,
+  },
+  userDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    width: 400
   },
 });
 
