@@ -7,6 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 const UserDetailsScreen = ({ route }) =>
 {
   const { user } = route.params;
+
   const navigation = useNavigation();
 
 
@@ -58,8 +59,6 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   topContainer: {
-    // replaced on the top of code with user color
-
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 50,
@@ -113,13 +112,15 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the alpha value for transparency
+    // Adjust the alpha value for transparency
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     padding: 10,
   },
   articlesTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: 'white', // Text color for better contrast
+    // Text color for better contrast
+    color: 'white',
   },
 
   articlesDesc: {
